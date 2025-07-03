@@ -33,21 +33,21 @@ using namespace std;
 
 // Optimal Solution
 // TC = O(N) , SC = O(1)
-int reverse1(int arr[],int start,int end){
-     while(start<=end){
-          int temp = arr[start];
-          arr[start] = arr[end];
-          arr[end] = temp;
-          start++;
-          end--;
-     }
-}
-int leftRotate(int arr[],int size,int d){
-     d = d%size;
-     reverse1(arr,0,d-1);
-     reverse1(arr,d,size-1);
-     reverse1(arr,0,size-1);
-}
+// int reverse1(int arr[],int start,int end){
+//      while(start<=end){
+//           int temp = arr[start];
+//           arr[start] = arr[end];
+//           arr[end] = temp;
+//           start++;
+//           end--;
+//      }
+// }
+// int leftRotate(int arr[],int size,int d){
+//      d = d%size;
+//      reverse1(arr,0,d-1);
+//      reverse1(arr,d,size-1);
+//      reverse1(arr,0,size-1);
+// }
 
 int main(){
      int arr[] = {1,3,12,7,2,9,4};

@@ -21,22 +21,22 @@ using namespace std;
 
 // 2. Optimal Solution
 // TC = O(N) , SC = O(1)
-int moveAllZero(int arr[],int size){
+// int moveAllZero(int arr[],int size){
      // 1st Approach
-     int i = 0;
-     int j = 1;
-     while(j<size){
-          if(arr[i] == 0 && arr[j] != 0){
-               swap(arr[i],arr[j]);
-               i++;
-               j++;
-          }
-          else if(arr[i]==0 && arr[j]==0) j++;
-          else {
-               i++;
-               j++;
-          }
-     }
+     // int i = 0;
+     // int j = 1;
+     // while(j<size){
+     //      if(arr[i] == 0 && arr[j] != 0){
+     //           swap(arr[i],arr[j]);
+     //           i++;
+     //           j++;
+     //      }
+     //      else if(arr[i]==0 && arr[j]==0) j++;
+     //      else {
+     //           i++;
+     //           j++;
+     //      }
+     // }
 
      // 2nd Approach
      // int j = -1;
@@ -52,7 +52,7 @@ int moveAllZero(int arr[],int size){
      //           j++;
      //      }
      // }
-}
+// }
 
 int main(){
      int arr[] = {0,1,0,0,0,3,4,0};
