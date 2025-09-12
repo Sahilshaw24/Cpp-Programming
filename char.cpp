@@ -23,11 +23,4 @@ int main(){
      // }
      // int *p = &arr[3];
      // cout << p;
-     char ch[] = {'s','a','h'};
-     string str = "Sahil";
-     // cout << ch << endl;
-     cout << sizeof(ch) << endl;
-     // cout << str << endl;
-     cout << sizeof(str) << endl;
-     cout << str.size();
 }
