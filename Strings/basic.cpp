@@ -17,16 +17,30 @@ int main(){
      // string s = "Sahil is a \"good\" boy";
      // cout << s;
 
-     // Reverse String
-     string str = "123456";
+     // // Reverse String
+     // string str = "Sahil";
+     // int start = 0;
+     // int end = str.size() - 1;
+     // while(start < end){
+     //      int temp = str[start];
+     //      str[start] = str[end];
+     //      str[end] = temp;
+     //      start++;
+     //      end--;
+     // }
+     // cout << str;
+
+     // Palindrome
+     string str = "namsn";
      int start = 0;
      int end = str.size() - 1;
      while(start < end){
-          int temp = str[start];
-          str[start] = str[end];
-          str[end] = temp;
+          if(str[start] != str[end]){
+               cout << "This is not palindrome" << endl;
+               return 0;
+          }
           start++;
           end--;
      }
-     cout << str;
+     cout << "It is a palindrome";
 }
